@@ -1,0 +1,11 @@
+# Ignore object files
+*.o
+
+# Ignore .DS_Store files
+.DS_Store
+
+# Ignore .d files
+*.d
+
+# Ignore .a files
+*.a
