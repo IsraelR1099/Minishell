@@ -22,7 +22,7 @@ void	ft_signals(void)
 
 	act.sa_handler = SIG_DFL;
 	ft_memset(&act, 0, sizeof(act));
-	act.sa_mask = 0;
+	sigemptyset(&act.sa_mask);
 	act.sa_flags = SA_RESTART | SA_SIGINFO;
 	act.sa_sigaction = ft_info_handler;
 	if (sigaction(SIGINT, &act, &oact) < 0)
